@@ -31,4 +31,13 @@ h3 {
   margin-top: 50px;
 }
 
+div.container {
+  overflow: hidden;
+}
+
+#datos {
+  width: 100%;
+  float: right;
+}
+
 }
