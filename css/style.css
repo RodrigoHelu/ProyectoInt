@@ -2,3 +2,21 @@ body {
   background-color: #01172E;
   color: white;
 }
+
+#mano {
+  position: absolute;
+  margin-left: 60px;
+  margin-top: 8px;
+}
+
+#maleta {
+  position: absolute;
+  margin-left: 32px;
+  margin-top: 8px;
+}
+
+#pincel {
+  position: absolute;
+  margin-left: 40px;
+  margin-top: 8px;
+}
