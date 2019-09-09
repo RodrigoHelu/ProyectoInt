@@ -22,6 +22,21 @@ body {
   margin-top: 8px;
 }
 
+h2#parrafo {
+  font-family: 'Work Sans', sans-serif; 
+}
+
+h3#titulo {
+  font-family: 'Patua One', cursive;
+}
+
+h4#texto {
+  font-family: 'Livvic', sans-serif;
+}
+
+h5#texto {
+  font-family: 'Livvic', sans-serif;
+}
 
 @media (min-width: 992px){
 
