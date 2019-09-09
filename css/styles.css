@@ -22,6 +22,14 @@ body {
   margin-top: 8px;
 }
 
+#navegacion {
+  margin-left: 33px;
+}
+
+#textonav {
+  color: white;
+}
+
 h2#parrafo {
   font-family: 'Work Sans', sans-serif;
 }
@@ -70,5 +78,8 @@ div.col-lg-6 {
   margin-left: 290px;
 }
 
+#navegacion {
+  margin-left: 0px;
+}
 
 }
