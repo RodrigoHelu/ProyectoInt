@@ -1,6 +1,7 @@
 body {
   background-color: #01172E;
   color: white;
+  width: 100%;
 }
 
 #mano {
@@ -24,5 +25,5 @@ body {
 
 @media (min-width: 992px){
 
-  
+
 }
