@@ -25,5 +25,9 @@ body {
 
 @media (min-width: 992px){
 
+h3 {
+  text-align: justify;
+  margin-right: 528px;
+}
 
 }
