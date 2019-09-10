@@ -1,0 +1,85 @@
+body {
+  background-color: #01172E;
+  color: white;
+  width: 100%;
+}
+
+#mano {
+  position: absolute;
+  margin-left: 60px;
+  margin-top: 8px;
+}
+
+#maleta {
+  position: absolute;
+  margin-left: 32px;
+  margin-top: 8px;
+}
+
+#pincel {
+  position: absolute;
+  margin-left: 40px;
+  margin-top: 8px;
+}
+
+#navegacion {
+  margin-left: 33px;
+}
+
+#textonav {
+  color: white;
+}
+
+h2#parrafo {
+  font-family: 'Work Sans', sans-serif;
+}
+
+h3#titulo {
+  font-family: 'Patua One', cursive;
+}
+
+h4#texto {
+  font-family: 'Livvic', sans-serif;
+}
+
+h5#texto {
+  font-family: 'Livvic', sans-serif;
+}
+
+@media (min-width: 992px){
+
+h3 {
+  text-align: justify;
+  margin-right: 285px;
+  margin-top: 50px;
+}
+
+div.container {
+  overflow: hidden;
+}
+
+div.col-lg-6 {
+  width: 100%;
+  float: right;
+}
+#mano {
+  margin-left: 205px;
+}
+
+#maleta {
+  margin-left: 115px;
+}
+
+#pincel {
+  margin-left: 183px;
+}
+
+#boton {
+  margin-left: 290px;
+}
+
+#navegacion {
+  margin-left: 0px;
+}
+
+}
