@@ -32,6 +32,8 @@ body {
 
 h2#parrafo {
   font-family: 'Work Sans', sans-serif;
+  margin-top: -400px;
+  margin-left: 58px;
 }
 
 h3#titulo {
@@ -46,11 +48,15 @@ h5#texto {
   font-family: 'Livvic', sans-serif;
 }
 
+div#registro {
+  margin-top: -100px;
+}
+
 @media (min-width: 992px){
 
 h3 {
   text-align: justify;
-  margin-right: 285px;
+  margin-right: 200px;
   margin-top: 50px;
 }
 
