@@ -1,6 +1,6 @@
 body {
-  background-color: #01172E;
-  color: white;
+  background-color: #F8F4E9;
+  color: black;
   width: 100%;
 }
 
@@ -24,6 +24,7 @@ body {
 
 #navegacion {
   margin-left: 33px;
+  background-color: #01172E;
 }
 
 #textonav {
@@ -50,6 +51,14 @@ h5#texto {
 
 div#registro {
   margin-top: -100px;
+}
+
+footer {
+  margin-top: -100px;
+}
+
+#chon{
+  color: #01172E;
 }
 
 @media (min-width: 992px){
