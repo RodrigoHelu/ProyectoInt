@@ -1,0 +1,74 @@
+body {
+  background-color: #F8F4E9;
+  color: black;
+  width: 100%;
+}
+
+#navegacion {
+  margin-left: 33px;
+  background-color: #01172E;
+}
+
+#textonav {
+  color: white;
+}
+
+div#pregfrec {
+  font-family: 'Patua One', cursive;
+  color: #01172E;
+  font-size: 25px;
+  opacity: 0.8;
+
+}
+
+}
+footer {
+  margin-top: -100px;
+}
+
+#chon{
+  color: #01172E;
+}
+
+div#cajadecontacto {
+
+  margin-left: 170px;
+}
+
+@media (min-width: 992px){
+
+h3 {
+  text-align: justify;
+  margin-right: 200px;
+  margin-top: 50px;
+}
+
+div.container {
+  overflow: hidden;
+}
+
+div.col-lg-6 {
+  width: 100%;
+  float: right;
+}
+#mano {
+  margin-left: 205px;
+}
+
+#maleta {
+  margin-left: 115px;
+}
+
+#pincel {
+  margin-left: 183px;
+}
+
+#boton {
+  margin-left: 290px;
+}
+
+#navegacion {
+  margin-left: 0px;
+}
+
+}
