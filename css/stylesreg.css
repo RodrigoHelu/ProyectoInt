@@ -65,6 +65,10 @@ div#cajareg {
   margin-top: -40px;
 }
 
+div#cajon {
+  background-color: #01172E;
+}
+
 @media (min-width: 992px){
 
 h3 {
