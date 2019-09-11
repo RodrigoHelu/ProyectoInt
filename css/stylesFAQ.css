@@ -4,24 +4,6 @@ body {
   width: 100%;
 }
 
-#mano {
-  position: absolute;
-  margin-left: 60px;
-  margin-top: 8px;
-}
-
-#maleta {
-  position: absolute;
-  margin-left: 32px;
-  margin-top: 8px;
-}
-
-#pincel {
-  position: absolute;
-  margin-left: 40px;
-  margin-top: 8px;
-}
-
 #navegacion {
   margin-left: 33px;
   background-color: #01172E;
@@ -30,29 +12,23 @@ body {
 #textonav {
   color: white;
 }
-
-h2#parrafo {
-  font-family: 'Work Sans', sans-serif;
-  margin-top: -400px;
-  margin-left: 58px;
+div#cajaderecha {
+  margin-top: -15px;
+  marg
 }
 
-h3#titulo {
+div#pregfrec {
   font-family: 'Patua One', cursive;
+  color: #01172E;
+  font-size: 25px;
+  opacity: 0.8;
+
 }
 
-h4#texto {
-  font-family: 'Livvic', sans-serif;
-}
+div#margencaja {
+margin-left: 75px;
 
-h5#texto {
-  font-family: 'Livvic', sans-serif;
 }
-
-div#registro {
-  margin-top: -100px;
-}
-
 footer {
   margin-top: -100px;
 }
@@ -60,11 +36,6 @@ footer {
 #chon{
   color: #01172E;
 }
-
-div#cajareg {
-  margin-top: -40px;
-}
-
 
 
 @media (min-width: 992px){
