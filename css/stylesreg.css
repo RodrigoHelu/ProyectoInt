@@ -35,18 +35,22 @@ h2#parrafo {
   font-family: 'Work Sans', sans-serif;
   margin-top: -400px;
   margin-left: 58px;
+  font-size: 25px;
 }
 
 h3#titulo {
   font-family: 'Patua One', cursive;
+  color:#01172E;
 }
 
 h4#texto {
   font-family: 'Livvic', sans-serif;
+  color:#01172E;
 }
 
 h5#texto {
   font-family: 'Livvic', sans-serif;
+  color:#01172E;
 }
 
 div#registro {
