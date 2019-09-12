@@ -30,6 +30,10 @@ body {
   color: white;
 }
 
+footer {
+  margin-top: -100px; 
+}
+
 h2#parrafo {
   font-family: 'Work Sans', sans-serif;
 }
