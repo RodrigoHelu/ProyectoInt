@@ -1,5 +1,5 @@
 body {
-  
+    background-color: #01172E;
     }
 
 .h7 {
@@ -10,6 +10,10 @@ body {
       margin-top: 0.97rem;
       }
 
+#textonav {
+  color: white;
+}
+
 @media (min-width: 992px) {
   .gedf-main {
       padding-left: 4rem;
@@ -17,6 +21,21 @@ body {
       }
   .gedf-card {
       margin-bottom: 2.77rem;
+      }
+
+  #imagenlogo {
+      width: 170px;
+      height: 50px;
+      margin-right: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      }
+  #navegacion {
+      margin-left: 0px;
+      }
+
+  #textonav {
+      display: block;
       }
   }
 
