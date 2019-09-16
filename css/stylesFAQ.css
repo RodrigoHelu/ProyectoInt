@@ -55,6 +55,7 @@ footer {
 
 #menufaq2 {
   margin-left: 10px;
+  margin-bottom: 5px;
 }
 
 @media (min-width: 992px){
@@ -123,7 +124,12 @@ div#pregfrec {
 }
 
 #menufaq2 {
-  margin-left: 0px; 
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+
+footer {
+  margin-top: 50px;
 }
 
 }
