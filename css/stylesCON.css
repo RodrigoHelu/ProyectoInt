@@ -22,20 +22,14 @@ div#pregfrec {
   color: #01172E;
   font-size: 25px;
   opacity: 0.8;
-
 }
 
-}
 footer {
-  margin-top: -100px;
+  margin-top: 20px;
 }
 
 #chon{
   color: #01172E;
-}
-
-div#cajadecontacto {
-  margin-left: 170px;
 }
 
 #barracel {
@@ -50,6 +44,10 @@ div#cajadecontacto {
   margin-top: 2px;
 }
 
+#enviarpc {
+  display: none;
+}
+
 @media (min-width: 992px){
 
 h3 {
@@ -60,6 +58,10 @@ h3 {
 
 div.container {
   overflow: hidden;
+}
+
+div#cajadecontacto {
+  margin-left: 170px;
 }
 
 div.col-lg-6 {
@@ -100,6 +102,14 @@ div.col-lg-6 {
   margin-right: 0px;
   margin-left: 0px;
   margin-top: 0px;
+}
+
+#enviarcel {
+  display: none;
+}
+
+#enviarpc {
+  display: block;
 }
 
 }
