@@ -15,7 +15,11 @@ body {
 }
 
 #buscador {
-  width: 300px;  
+  width: 300px;
+}
+
+#iconosnav {
+  color: white;
 }
 
 @media (min-width: 992px) {
