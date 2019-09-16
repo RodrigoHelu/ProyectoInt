@@ -11,6 +11,7 @@ body {
 
 #textonav {
   color: white;
+  display: none;
 }
 
 div#pregfrec {
@@ -31,8 +32,19 @@ footer {
 }
 
 div#cajadecontacto {
-
   margin-left: 170px;
+}
+
+#barracel {
+  color: white;
+}
+
+#imagenlogo {
+  width: 85px;
+  height: 25px;
+  margin-right: 40px;
+  margin-left: -40px;
+  margin-top: 2px;
 }
 
 @media (min-width: 992px){
@@ -69,6 +81,22 @@ div.col-lg-6 {
 
 #navegacion {
   margin-left: 0px;
+}
+
+#textonav {
+  display: block;
+}
+
+#barracel {
+  display: none;
+}
+
+#imagenlogo {
+  width: 170px;
+  height: 50px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
 }
 
 }
