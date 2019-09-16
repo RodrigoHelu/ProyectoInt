@@ -19,13 +19,13 @@
         <a class="nav-item nav-link active" href="Home.html" id="textonav">Inicio <span class="sr-only">(current)</span></a>
         <a class="nav-item nav-link" href="Registro.html" id="textonav">Registrate</a>
         <a class="nav-item nav-link" href="#" id="textonav">Términos y condiciones</a>
-        <ul class="nav" id="barracel">
+        <ul class="nav">
           <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Menú</a>
-          <div class="dropdown-menu">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="barracel">Menú</a>
+          <div class="dropdown-menu dropdown-menu-right">
           <a class="dropdown-item" href="Home.html">Inicio</a>
           <a class="dropdown-item" href="Registro.html">Registrate</a>
-          <a class="dropdown-item" href="#">Térm y cond</a>
+          <a class="dropdown-item" href="#">Términos y condiciones</a>
           </div>
           </li>
         </ul>
@@ -33,28 +33,27 @@
   <div class="container">
   <div class="col-12 text-center mt-3"  id="pregfrec">Preguntas Frecuentes</div>
 
-  ​<div class="container">
       <div class="row">
-          <div class="col-md-1">
+          <div class="col-12 col-md-1">
               <div class="nav nav-pills faq-nav" id="faq-tabs" role="tablist" aria-orientation="vertical">
                   <a href="#tab1" class="nav-link active" data-toggle="pill" role="tab" aria-controls="tab1" aria-selected="true">
-                      <i class="mdi mdi-help-circle"></i>General
+                      <i class="mdi mdi-help-circle" id="menufaq"></i>General
                   </a>
                   <a href="#tab2" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab2" aria-selected="false">
-                      <i class="mdi mdi-account"></i>Cuenta
+                      <i class="mdi mdi-account" id="menufaq"></i>Cuenta
                   </a>
                   <a href="#tab3" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab3" aria-selected="false">
-                      <i class="mdi mdi-account"></i>Perfil
+                      <i class="mdi mdi-account" id="menufaq"></i>Perfil
                   </a>
                   <a href="#tab4" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab4" aria-selected="false">
-                      <i class="mdi mdi-heart"></i>Dispositivos
+                      <i class="mdi mdi-heart" id="menufaq2"></i>Dispositivos
                   </a>
                   <a href="#tab6" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab6" aria-selected="false">
-                      <i class="mdi mdi-help"></i>Anuncios
+                      <i class="mdi mdi-help" id="menufaq2"></i>Anuncios
                   </a>
               </div>
           </div>
-          <div class="col-lg-9" id="margencaja">
+          <div class="col-12 col-lg-9" id="margencaja">
               <div class="tab-content" id="faq-tab-content">
                   <div class="tab-pane show active" id="tab1" role="tabpanel" aria-labelledby="tab1">
                       <div class="accordion" id="accordion-tab-1">
@@ -64,7 +63,7 @@
                                       <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-1" aria-expanded="false" aria-controls="accordion-tab-1-content-1">Pregunta 1</button>
                                   </h5>
                               </div>
-                              <div class="collapse show" id="accordion-tab-1-content-1" aria-labelledby="accordion-tab-1-heading-1" data-parent="#accordion-tab-1">
+                              <div class="collapse" id="accordion-tab-1-content-1" aria-labelledby="accordion-tab-1-heading-1" data-parent="#accordion-tab-1">
                                   <div class="card-body">
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                     <p><strong>Ejemplo: </strong>It has survived not only five centuries.</p>
@@ -120,7 +119,7 @@
                                       <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-1" aria-expanded="false" aria-controls="accordion-tab-2-content-1">Pregunta 5</button>
                                   </h5>
                               </div>
-                              <div class="collapse show" id="accordion-tab-2-content-1" aria-labelledby="accordion-tab-2-heading-1" data-parent="#accordion-tab-2">
+                              <div class="collapse" id="accordion-tab-2-content-1" aria-labelledby="accordion-tab-2-heading-1" data-parent="#accordion-tab-2">
                                   <div class="card-body">
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                     <p><strong>Ejemplo: </strong>It has survived not only five centuries.</p>
@@ -176,7 +175,7 @@
                                       <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-1" aria-expanded="false" aria-controls="accordion-tab-3-content-1">Pregunta 9</button>
                                   </h5>
                               </div>
-                              <div class="collapse show" id="accordion-tab-3-content-1" aria-labelledby="accordion-tab-3-heading-1" data-parent="#accordion-tab-3">
+                              <div class="collapse" id="accordion-tab-3-content-1" aria-labelledby="accordion-tab-3-heading-1" data-parent="#accordion-tab-3">
                                   <div class="card-body">
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                     <p><strong>Ejemplo: </strong>It has survived not only five centuries.</p>
@@ -232,7 +231,7 @@
                                       <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-4-content-1" aria-expanded="false" aria-controls="accordion-tab-4-content-1">Pregunta 13</button>
                                   </h5>
                               </div>
-                              <div class="collapse show" id="accordion-tab-4-content-1" aria-labelledby="accordion-tab-4-heading-1" data-parent="#accordion-tab-4">
+                              <div class="collapse" id="accordion-tab-4-content-1" aria-labelledby="accordion-tab-4-heading-1" data-parent="#accordion-tab-4">
                                   <div class="card-body">
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                     <p><strong>Ejemplo: </strong>It has survived not only five centuries.</p>
@@ -288,7 +287,7 @@
                                       <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-6-content-1" aria-expanded="false" aria-controls="accordion-tab-6-content-1">Pregunta 17</button>
                                   </h5>
                               </div>
-                              <div class="collapse show" id="accordion-tab-6-content-1" aria-labelledby="accordion-tab-6-heading-1" data-parent="#accordion-tab-6">
+                              <div class="collapse" id="accordion-tab-6-content-1" aria-labelledby="accordion-tab-6-heading-1" data-parent="#accordion-tab-6">
                                   <div class="card-body">
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                     <p><strong>Ejemplo: </strong>It has survived not only five centuries.</p>
@@ -340,7 +339,6 @@
           </div>
       </div>
   </div>
-
 
   <br>
   <br>

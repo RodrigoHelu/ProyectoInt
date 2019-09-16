@@ -26,13 +26,9 @@ div#pregfrec {
   color: #01172E;
   font-size: 25px;
   opacity: 0.8;
-
+  margin-bottom: 15px;
 }
 
-div#margencaja {
-margin-left: 75px;
-
-}
 footer {
   margin-top: -100px;
 }
@@ -53,12 +49,24 @@ footer {
   margin-top: 2px;
 }
 
+#menufaq {
+  margin-left: 2px;
+}
+
+#menufaq2 {
+  margin-left: 10px;
+}
+
 @media (min-width: 992px){
 
 h3 {
   text-align: justify;
   margin-right: 200px;
   margin-top: 50px;
+}
+
+div#margencaja {
+margin-left: 75px;
 }
 
 div.container {
@@ -69,6 +77,11 @@ div.col-lg-6 {
   width: 100%;
   float: right;
 }
+
+div#pregfrec {
+  margin-bottom: 0px;
+}
+
 #mano {
   margin-left: 205px;
 }
@@ -103,6 +116,14 @@ div.col-lg-6 {
   margin-right: 0px;
   margin-left: 0px;
   margin-top: 0px;
+}
+
+#menufaq {
+  margin-left: 0px;
+}
+
+#menufaq2 {
+  margin-left: 0px; 
 }
 
 }
