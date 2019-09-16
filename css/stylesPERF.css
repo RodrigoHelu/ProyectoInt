@@ -22,6 +22,10 @@ body {
   color: white;
 }
 
+#barrabusqueda {
+  margin-left: 40px;
+}
+
 @media (min-width: 992px) {
   .gedf-main {
       padding-left: 4rem;
