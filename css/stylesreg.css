@@ -40,11 +40,13 @@ h2#parrafo {
   margin-top: -400px;
   margin-left: 58px;
   font-size: 25px;
+  display: none;
 }
 
 h3#titulo {
   font-family: 'Patua One', cursive;
   color:#01172E;
+  margin-top: 15px;
 }
 
 h4#texto {
@@ -58,7 +60,7 @@ h5#texto {
 }
 
 div#registro {
-  margin-top: -100px;
+  margin-top: 10px;
 }
 
 footer {
@@ -87,6 +89,10 @@ div#cajon {
   margin-right: 38px;
   margin-left: -41px;
   margin-top: 2px;
+}
+
+#textoregistro {
+  margin-top: -100px;
 }
 
 @media (min-width: 992px){
@@ -138,6 +144,22 @@ div.col-lg-6 {
   height: 50px;
   margin-right: 0px;
   margin-left: 0px;
+  margin-top: 0px;
+}
+
+h3#titulo {
+  margin-top: 50px;
+}
+
+h2#parrafo {
+  display: block;
+}
+
+div#registro {
+  margin-top: -100px;
+}
+
+#textoregistro {
   margin-top: 0px;
 }
 
