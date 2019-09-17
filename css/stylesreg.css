@@ -1,6 +1,6 @@
 body {
-  background-color: #F8F4E9;
-  color: black;
+  background-color: #01172E;
+  color: white;
   width: 100%;
 }
 
@@ -26,10 +26,6 @@ body {
   margin-left: 33px;
 }
 
-#menunavv {
-  background-color: #01172E;
-}
-
 #textonav {
   color: white;
   display: none;
@@ -45,18 +41,15 @@ h2#parrafo {
 
 h3#titulo {
   font-family: 'Patua One', cursive;
-  color:#01172E;
   margin-top: 15px;
 }
 
 h4#texto {
   font-family: 'Livvic', sans-serif;
-  color:#01172E;
 }
 
 h5#texto {
   font-family: 'Livvic', sans-serif;
-  color:#01172E;
 }
 
 div#registro {
@@ -67,16 +60,8 @@ footer {
   margin-top: -100px;
 }
 
-#chon{
-  color: #01172E;
-}
-
 div#cajareg {
   margin-top: -40px;
-}
-
-div#cajon {
-  background-color: #01172E;
 }
 
 #barracel {
