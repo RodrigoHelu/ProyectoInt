@@ -30,7 +30,7 @@ body {
   width: 85px;
   height: 25px;
   margin-right: 38px;
-  margin-left: -41px;
+  margin-left: 0px;
   margin-top: 2px;
 }
 
@@ -58,6 +58,14 @@ body {
   font-size: 12px;
 }
 
+#barranavegacionpc {
+  display: none;
+}
+
+#barracel {
+  color: white;
+}
+
 @media (min-width: 992px) {
   .gedf-main {
       padding-left: 4rem;
@@ -65,14 +73,6 @@ body {
       }
   .gedf-card {
       margin-bottom: 2.77rem;
-      }
-
-  #imagenlogo {
-      width: 170px;
-      height: 50px;
-      margin-right: 0px;
-      margin-left: 0px;
-      margin-top: 0px;
       }
 
   #navegacion {
@@ -117,6 +117,14 @@ body {
 
     #misposts {
       margin-bottom: 40px;
+    }
+
+    #barranavegacionpc {
+      display: flex;
+    }
+
+    #barranavegacioncel {
+      display: none;
     }
   }
 
