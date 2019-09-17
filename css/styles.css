@@ -6,19 +6,19 @@ body {
 
 #mano {
   position: absolute;
-  margin-left: 60px;
+  margin-left: 110px;
   margin-top: 8px;
 }
 
 #maleta {
   position: absolute;
-  margin-left: 32px;
+  margin-left: 20px;
   margin-top: 8px;
 }
 
 #pincel {
   position: absolute;
-  margin-left: 40px;
+  margin-left: 88px;
   margin-top: 8px;
 }
 
@@ -37,6 +37,11 @@ footer {
 
 h2#parrafo {
   font-family: 'Work Sans', sans-serif;
+}
+
+h2#parrafo1 {
+  font-family: 'Work Sans', sans-serif;
+  margin-top: -50px;
 }
 
 h3#titulo {
@@ -70,6 +75,9 @@ h3 {
   text-align: justify;
   margin-right: 285px;
   margin-top: 50px;
+}
+h2#parrafo1 {
+  margin-top: 0px;
 }
 
 div.container {
