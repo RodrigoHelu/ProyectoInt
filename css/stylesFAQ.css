@@ -1,15 +1,7 @@
 body {
-  background-color: #F8F4E9;
+  background-color: #01172E;
   color: black;
   width: 100%;
-}
-
-#navegacion {
-  margin-left: 33px;
-}
-
-#menunavv {
-  background-color: #01172E;
 }
 
 #textonav {
@@ -18,7 +10,6 @@ body {
 }
 div#cajaderecha {
   margin-top: -15px;
-  marg
 }
 
 div#pregfrec {
@@ -31,10 +22,6 @@ div#pregfrec {
 
 footer {
   margin-top: -100px;
-}
-
-#chon{
-  color: #01172E;
 }
 
 #barracel {
@@ -51,11 +38,13 @@ footer {
 
 #menufaq {
   margin-left: 31px;
+  color: white;
 }
 
 #menufaq2 {
   margin-left: 48px;
   margin-bottom: 5px;
+  color: white;
 }
 
 @media (min-width: 992px){
@@ -97,10 +86,6 @@ div#pregfrec {
 
 #boton {
   margin-left: 290px;
-}
-
-#navegacion {
-  margin-left: 0px;
 }
 
 #textonav {

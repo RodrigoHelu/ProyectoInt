@@ -1,15 +1,11 @@
 body {
-  background-color: #F8F4E9;
-  color: black;
+  background-color: #01172E;
+  color: white;
   width: 100%;
 }
 
 #navegacion {
   margin-left: 33px;
-}
-
-#menunavv {
-  background-color: #01172E;
 }
 
 #textonav {
@@ -19,17 +15,13 @@ body {
 
 div#pregfrec {
   font-family: 'Patua One', cursive;
-  color: #01172E;
+  color: white;
   font-size: 25px;
   opacity: 0.8;
 }
 
 footer {
   margin-top: 20px;
-}
-
-#chon{
-  color: #01172E;
 }
 
 #barracel {
