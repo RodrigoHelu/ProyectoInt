@@ -15,7 +15,7 @@ body {
 }
 
 #buscador {
-  width: 300px;
+  width: 30px;
 }
 
 #iconosnav {
@@ -24,6 +24,38 @@ body {
 
 #barrabusqueda {
   margin-left: 40px;
+}
+
+#imagenlogo {
+  width: 85px;
+  height: 25px;
+  margin-right: 38px;
+  margin-left: -41px;
+  margin-top: 2px;
+}
+
+#fotoperfil {
+  margin-bottom: 10px;
+}
+
+#publicaciones1 {
+  display: none;
+}
+
+#publicaciones2 {
+  margin-bottom: 10px;
+}
+
+#misposts {
+  margin-bottom: 10px;
+}
+
+#amigosqueseguir {
+  display: none;
+}
+
+#iconitos {
+  font-size: 12px;
 }
 
 @media (min-width: 992px) {
@@ -42,6 +74,7 @@ body {
       margin-left: 0px;
       margin-top: 0px;
       }
+
   #navegacion {
       margin-left: 0px;
       }
@@ -49,9 +82,44 @@ body {
   #textonav {
       display: block;
       }
+
+  #imagenlogo {
+      width: 170px;
+      height: 50px;
+      margin-right: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      }
+
+    #buscador {
+      width: 300px;
+      }
+
+    #fotoperfil {
+      margin-bottom: 0px;
+      }
+
+    #publicaciones1 {
+      display: block;
+      }
+
+    #publicaciones2 {
+      display: none;
+    }
+
+    #amigosqueseguir {
+      display: block;
+    }
+
+    #iconitos {
+      font-size: 17px;
+    }
+
+    #misposts {
+      margin-bottom: 40px;
+    }
   }
 
-        /**Reset Bootstrap*/
 .dropdown-toggle::after {
       content: none;
       display: none;
