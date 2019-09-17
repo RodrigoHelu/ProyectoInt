@@ -6,6 +6,11 @@ body {
   display: none;
 }
 
+#leecross {
+  text-decoration: none;
+  color: black; 
+}
+
 .h7 {
       font-size: 0.8rem;
     }
