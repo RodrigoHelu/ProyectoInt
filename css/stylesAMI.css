@@ -36,7 +36,7 @@ body {
       color: #797979;
       border: 2px solid #797979
  }
- 
+
 .thumb-lg {
       height: 88px;
       width: 88px;
@@ -73,7 +73,7 @@ h4 {
 }
 
 #buscador {
-  width: 300px;
+  width: 30px;
 }
 
 #iconosnav {
@@ -84,16 +84,66 @@ h4 {
   margin-left: 40px;
 }
 
+#imagenlogo {
+  width: 85px;
+  height: 25px;
+  margin-right: 38px;
+  margin-left: 0px;
+  margin-top: 2px;
+}
+
+#fotoperfil {
+  margin-bottom: 10px;
+}
+
+#publicaciones1 {
+  display: none;
+}
+
+#publicaciones2 {
+  margin-bottom: 10px;
+}
+
+#misposts {
+  margin-bottom: 10px;
+}
+
+#amigosqueseguir {
+  display: none;
+}
+
+#iconitos {
+  font-size: 12px;
+}
+
+#barranavegacionpcs {
+  display: none;
+}
+
+#barracel {
+  color: white;
+}
+
+
+
 @media (min-width: 992px) {
   .gedf-main {
-    padding-left: 4rem;
-    padding-right: 4rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
       }
   .gedf-card {
       margin-bottom: 2.77rem;
       }
 
   #luisdiaz {
+        display: block;
+      }
+
+  #navegacion {
+      margin-left: 0px;
+      }
+
+  #textonav {
       display: block;
       }
 
@@ -105,13 +155,41 @@ h4 {
       margin-top: 0px;
       }
 
-  #navegacion {
-          margin-left: 0px;
-          }
+    #buscador {
+      width: 300px;
+      }
 
-  #textonav {
+    #fotoperfil {
+      margin-bottom: 0px;
+      }
+
+    #publicaciones1 {
       display: block;
       }
+
+    #publicaciones2 {
+      display: none;
+    }
+
+    #amigosqueseguir {
+      display: block;
+    }
+
+    #iconitos {
+      font-size: 17px;
+    }
+
+    #misposts {
+      margin-bottom: 40px;
+    }
+
+    #barranavegacionpcs {
+      display: flex;
+    }
+
+    #barranavegacioncel {
+      display: none;
+    }
   }
 
 .dropdown-toggle::after {
