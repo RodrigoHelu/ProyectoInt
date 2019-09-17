@@ -66,6 +66,10 @@ body {
   color: white;
 }
 
+div.h7{
+  font-family: 'Livvic', sans-serif;
+}
+
 @media (min-width: 992px) {
   .gedf-main {
       padding-left: 4rem;
