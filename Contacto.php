@@ -16,17 +16,17 @@ if ($_POST) {
 
   if (strlen($nombre) == 0) {
     $comentario = "El campo nombre está vacío";
-    $nombre="";
+    $nombre= null;
   }
 
   if (strlen($apellido) == 0) {
     $comentario2 = "El campo apellido está vacío";
-    $apellido="";
+    $apellido= null;
   }
 
   if (filter_var($email, FILTER_VALIDATE_EMAIL) == false) {
     $comentario3 = "El email ingresado debe ser válido";
-    $email="";
+    $email= null;
   }
 
   if (is_numeric($_POST["telefono"]) == false) {

@@ -19,21 +19,21 @@ $foto = "Sube tu foto de perfil";
 
       if (strlen($nombre) == 0) {
         $comentario = "El campo nombre está vacío";
-        $nombre="";
+        $nombre= null;
       }
 
       if (strlen($apellido) == 0) {
-        $comentario2 = "El campo apellido está vacío";
-        $apellido="";
+        $comentario2 = "<br>El campo apellido está vacío";
+        $apellido= null;
       }
 
       if (filter_var($email, FILTER_VALIDATE_EMAIL) == false) {
         $comentario3 = "El email ingresado debe ser válido";
-        $email="";
+        $email= null;
       }
 
       if (strlen($_POST["password"]) < 8) {
-        $comentario4 = "La contraseña debe tener al menos 8 caracteres";
+        $comentario4 = "<br>La contraseña debe tener al menos 8 caracteres";
       }
 
       if($_FILES){
