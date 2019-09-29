@@ -12,6 +12,7 @@ if ($_POST) {
   $nombre = $_POST["nombre"];
   $apellido = $_POST["apellido"];
   $email = $_POST["email"];
+  $telefono = $_POST["telefono"];
 
   if (strlen($nombre) == 0) {
     $comentario = "El campo nombre está vacío";
@@ -84,14 +85,14 @@ if ($_POST) {
                           <div class="form-group">
                               <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                               <div class="col-md-8">
-                                  <input id="fname" name="nombre" type="text" placeholder="Nombre" class="form-control">
+                                  <input id="fname" name="nombre" type="text" placeholder="Nombre" class="form-control" value=<?=$nombre?>>
                                   <small class="form-text text-muted" style="color: black"><?=$comentario?></small>
                               </div>
                           </div>
                           <div class="form-group">
                               <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                               <div class="col-md-8">
-                                  <input id="lname" name="apellido" type="text" placeholder="Apellido" class="form-control">
+                                  <input id="lname" name="apellido" type="text" placeholder="Apellido" class="form-control" value=<?=$apellido?>>
                                   <small class="form-text text-muted" style="color: black"><?=$comentario2?></small>
                               </div>
                           </div>
@@ -99,7 +100,7 @@ if ($_POST) {
                           <div class="form-group">
                               <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
                               <div class="col-md-8">
-                                  <input id="email" name="email" type="text" placeholder="Correo Electrónico" class="form-control">
+                                  <input id="email" name="email" type="text" placeholder="Correo Electrónico" class="form-control" value=<?=$email?>>
                                   <small class="form-text text-muted" style="color: black"><?=$comentario3?></small>
                               </div>
                           </div>
@@ -107,7 +108,7 @@ if ($_POST) {
                           <div class="form-group">
                               <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
                               <div class="col-md-8">
-                                  <input id="phone" name="telefono" type="phone" placeholder="Teléfono" class="form-control">
+                                  <input id="phone" name="telefono" type="phone" placeholder="Teléfono" class="form-control" value=<?=$telefono?>>
                                   <small class="form-text text-muted" style="color: black"><?=$comentario4?></small>
                               </div>
                           </div>
