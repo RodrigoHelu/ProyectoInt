@@ -53,26 +53,28 @@ $foto = "Sube tu foto de perfil";
                 }
               }
             }
+      if($nombre != null && $apellido != null && $email != null){
+        $password  =  password_hash( $_POST['password'], PASSWORD_DEFAULT);
+        $archivo = "usuarios.json";
+        $contenidoArchivo = file_get_contents( $archivo );
 
-      $password  =  password_hash( $_POST['password'], PASSWORD_DEFAULT);
-      $archivo = "usuarios.json";
-      $contenidoArchivo = file_get_contents( $archivo );
+        $datos = json_decode( $contenidoArchivo, true );
+        if (!$datos) {
+          $datos = [];
+        }
 
-      $datos = json_decode( $contenidoArchivo, true );
-      if (!$datos) {
-        $datos = [];
+        $datos[] =  [
+          'nombre' =>  $_POST['nombre'],
+          'apellido' => $_POST['apellido'],
+          'email' =>  $_POST['email'],
+          'password' => $password
+        ];
+
+        $json = json_encode( $datos );
+
+        file_put_contents( $archivo, $json );
       }
-
-      $datos[] =  [
-        'nombre' =>  $_POST['nombre'],
-        'apellido' => $_POST['apellido'],
-        'email' =>  $_POST['email'],
-        'password' => $password
-      ];
-
-      $json = json_encode( $datos );
-
-      file_put_contents( $archivo, $json );
+      
     }
 
 ?>
