@@ -4,6 +4,7 @@ $nombre = "";
 $apellido = "";
 $email = "";
 $ext = "";
+$password = "";
 $comentario = "";
 $comentario2 = "";
 $comentario3 = "";
@@ -44,10 +45,26 @@ $comentario5 = "";
         $comentario5 = "La imagen debe tener extension .jpg, .jpeg o .png";
       }
 
+      $password  =  password_hash( $_POST['password'], PASSWORD_DEFAULT);
+      $archivo = "usuarios.json";
+      $contenidoArchivo = file_get_contents( $archivo );
+
+      $datos = json_decode( $contenidoArchivo, true );
+      if (!$datos) {
+        $datos = [];
+      }
+
+      $datos[] =  [
+        'nombre' =>  $_POST['nombre'],
+        'apellido' => $_POST['apellido'],
+        'email' =>  $_POST['email'],
+        'password' => $password
+      ];
+
+      $json = json_encode( $datos );
+
+      file_put_contents( $archivo, $json );
     }
-
-
-
 
 
 ?>
@@ -179,18 +196,17 @@ $comentario5 = "";
             <div class="row my-4">
               <div class="col-12">
                 <div class="custom-control custom-control-alternative custom-checkbox">
-                  <input class="custom-control-input" id="customCheckRegister" type="checkbox">
-                  <label class="custom-control-label" for="customCheckRegister">
+                  <input class="custom-control-input" id="customCheckRegister1" type="checkbox">
+                  <label class="custom-control-label" for="customCheckRegister1">
                     <span style="color:black">Recordar usuario</span>
                   </label>
                 </div>
               </div>
-            </div>
-            <div class="row my-4">
+              <br>
               <div class="col-12">
                 <div class="custom-control custom-control-alternative custom-checkbox">
-                  <input class="custom-control-input" id="customCheckRegister" type="checkbox">
-                  <label class="custom-control-label" for="customCheckRegister">
+                  <input class="custom-control-input" id="customCheckRegister2" type="checkbox">
+                  <label class="custom-control-label" for="customCheckRegister2">
                     <span style="color:black">Acepto los <a href="#!">Términos y condiciones</a></span>
                   </label>
                 </div>
