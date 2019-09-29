@@ -1,3 +1,56 @@
+<?php
+
+$nombre = "";
+$apellido = "";
+$email = "";
+$ext = "";
+$comentario = "";
+$comentario2 = "";
+$comentario3 = "";
+$comentario4 = "";
+$comentario5 = "";
+
+    if ($_POST) {
+      $nombre = $_POST["nombre"];
+      $apellido = $_POST["apellido"];
+      $email = $_POST["email"];
+
+      if (strlen($nombre) == 0) {
+        $comentario = "El campo nombre está vacío";
+        $nombre="";
+      }
+
+      if (strlen($apellido) == 0) {
+        $comentario2 = "El campo apellido está vacío";
+        $apellido="";
+      }
+
+      if (filter_var($email, FILTER_VALIDATE_EMAIL) == false) {
+        $comentario3 = "El email ingresado debe ser válido";
+        $email="";
+      }
+
+      if (strlen($_POST["password"]) < 8) {
+        $comentario4 = "La contraseña debe tener al menos 8 caracteres";
+      }
+
+      if ($_FILES["archivo"]["error"] == 0) {
+        $comentario5 = "";
+      }
+
+      $ext = pathinfo($_FILES["archivo"]["name"], PATHINFO_EXTENSION);
+
+      if ($ext != "jpg" && $ext != "jpeg" && $ext != "png") {
+        $comentario5 = "La imagen debe tener extension .jpg, .jpeg o .png";
+      }
+
+    }
+
+
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -74,40 +127,65 @@
           <div class="text-center mb-4">
             <small  style="color:black">O regístrate con tus datos</small>
           </div>
-          <form role="form">
+          <form role="form" action="Registro.php" method="post" enctype="multipart/form-data">
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
                 </div>
-                <input class="form-control" placeholder="Nombre" type="text">
+                <input class="form-control" placeholder="Nombre" type="text" name="nombre" value=<?=$nombre?>>
               </div>
+              <span style="color: black"><?=$comentario?></span>
             </div>
             <div class="form-group">
               <div class="input-group input-group-alternative">
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                 </div>
-                <input class="form-control" placeholder="Apellido" type="text">
+                <input class="form-control" placeholder="Apellido" type="text" name="apellido" value=<?=$apellido?>>
               </div>
+              <span style="color: black"><?=$comentario2?></span>
             </div>
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                 </div>
-                <input class="form-control" placeholder="Correo Electrónico" type="email">
+                <input class="form-control" placeholder="Correo Electrónico" type="email" name="email" value=<?=$email?>>
               </div>
+              <span style="color: black"><?=$comentario3?></span>
             </div>
             <div class="form-group">
               <div class="input-group input-group-alternative">
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                 </div>
-                <input class="form-control" placeholder="Contraseña" type="password">
+                <input class="form-control" placeholder="Contraseña" type="password" name="password">
               </div>
+              <span style="color: black"><?=$comentario4?></span>
             </div>
             <div class="font-italic" style="color:black"><small>Seguridad de la contraseña: <span class="text-success font-weight-700">segura</span></small></div>
+            <br>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupFileAddon01"></span>
+              </div>
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFileLang" lang="es" name="archivo">
+                <label class="custom-file-label" for="customFileLang">Sube tu foto de perfil</label>
+              </div>
+            </div>
+            <span style="color: black"><?=$comentario5?></span>
+            <div class="row my-4">
+              <div class="col-12">
+                <div class="custom-control custom-control-alternative custom-checkbox">
+                  <input class="custom-control-input" id="customCheckRegister" type="checkbox">
+                  <label class="custom-control-label" for="customCheckRegister">
+                    <span style="color:black">Recordar usuario</span>
+                  </label>
+                </div>
+              </div>
+            </div>
             <div class="row my-4">
               <div class="col-12">
                 <div class="custom-control custom-control-alternative custom-checkbox">
@@ -119,7 +197,7 @@
               </div>
             </div>
             <div class="text-center">
-              <button type="button" class="btn btn-primary mt-4">Crear Cuenta</button>
+              <button type="submit" class="btn btn-primary mt-4">Crear Cuenta</button>
             </div>
           </form>
         </div>
