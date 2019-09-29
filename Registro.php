@@ -74,7 +74,7 @@ $foto = "Sube tu foto de perfil";
 
         file_put_contents( $archivo, $json );
       }
-      
+
     }
 
 ?>
@@ -198,7 +198,7 @@ $foto = "Sube tu foto de perfil";
                 <span class="input-group-text" id="inputGroupFileAddon01"></span>
               </div>
               <div class="custom-file">
-                <input type="file" class="custom-file-input" id="customFileLang" lang="es" name="archivo">
+                <input type="file" class="custom-file-input" id="customFileLang" lang="en" name="archivo">
                 <label class="custom-file-label" for="customFileLang"><?=$foto?></label>
               </div>
             </div>
