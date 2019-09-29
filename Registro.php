@@ -10,6 +10,7 @@ $comentario2 = "";
 $comentario3 = "";
 $comentario4 = "";
 $comentario5 = "";
+$foto = "Sube tu foto de perfil";
 
     if ($_POST) {
       $nombre = $_POST["nombre"];
@@ -35,15 +36,23 @@ $comentario5 = "";
         $comentario4 = "La contraseña debe tener al menos 8 caracteres";
       }
 
-      if ($_FILES["archivo"]["error"] == 0) {
-        $comentario5 = "";
-      }
-
-      $ext = pathinfo($_FILES["archivo"]["name"], PATHINFO_EXTENSION);
-
-      if ($ext != "jpg" && $ext != "jpeg" && $ext != "png") {
-        $comentario5 = "La imagen debe tener extension .jpg, .jpeg o .png";
-      }
+      if($_FILES){
+          if ($_FILES["archivo"]["error"] != 0) {
+            $comentario5 = "Hubo un error al cargar tu foto de perfil";
+          }
+          else {
+            $foto = "Tu foto se subió exitosamente";
+            $nombrearchivo = $_FILES["archivo"]["name"];
+            $ext = pathinfo($_FILES["archivo"]["name"], PATHINFO_EXTENSION);
+            if ($ext != "jpg" && $ext != "jpeg" && $ext != "png") {
+              $comentario5 = "La imagen debe tener extension .jpg, .jpeg o .png";
+                }
+            else {
+              // No hay errores
+              move_uploaded_file($_FILES["archivo"]["tmp_name"], "archivos/ " . $nombrearchivo);
+                }
+              }
+            }
 
       $password  =  password_hash( $_POST['password'], PASSWORD_DEFAULT);
       $archivo = "usuarios.json";
@@ -65,7 +74,6 @@ $comentario5 = "";
 
       file_put_contents( $archivo, $json );
     }
-
 
 ?>
 <!DOCTYPE html>
@@ -152,7 +160,7 @@ $comentario5 = "";
                 </div>
                 <input class="form-control" placeholder="Nombre" type="text" name="nombre" value=<?=$nombre?>>
               </div>
-              <span style="color: black"><?=$comentario?></span>
+              <small class="form-text text-muted" style="color: black"><?=$comentario?></small>
             </div>
             <div class="form-group">
               <div class="input-group input-group-alternative">
@@ -161,7 +169,7 @@ $comentario5 = "";
                 </div>
                 <input class="form-control" placeholder="Apellido" type="text" name="apellido" value=<?=$apellido?>>
               </div>
-              <span style="color: black"><?=$comentario2?></span>
+              <small class="form-text text-muted" style="color: black"><?=$comentario2?></small>
             </div>
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
@@ -170,7 +178,7 @@ $comentario5 = "";
                 </div>
                 <input class="form-control" placeholder="Correo Electrónico" type="email" name="email" value=<?=$email?>>
               </div>
-              <span style="color: black"><?=$comentario3?></span>
+              <small class="form-text text-muted" style="color: black"><?=$comentario3?></small>
             </div>
             <div class="form-group">
               <div class="input-group input-group-alternative">
@@ -179,7 +187,7 @@ $comentario5 = "";
                 </div>
                 <input class="form-control" placeholder="Contraseña" type="password" name="password">
               </div>
-              <span style="color: black"><?=$comentario4?></span>
+              <small class="form-text text-muted" style="color: black"><?=$comentario4?></small>
             </div>
             <div class="font-italic" style="color:black"><small>Seguridad de la contraseña: <span class="text-success font-weight-700">segura</span></small></div>
             <br>
@@ -189,10 +197,10 @@ $comentario5 = "";
               </div>
               <div class="custom-file">
                 <input type="file" class="custom-file-input" id="customFileLang" lang="es" name="archivo">
-                <label class="custom-file-label" for="customFileLang">Sube tu foto de perfil</label>
+                <label class="custom-file-label" for="customFileLang"><?=$foto?></label>
               </div>
             </div>
-            <span style="color: black"><?=$comentario5?></span>
+            <small class="form-text text-muted" style="color: black"><?=$comentario5?></small>
             <div class="row my-4">
               <div class="col-12">
                 <div class="custom-control custom-control-alternative custom-checkbox">
@@ -205,7 +213,7 @@ $comentario5 = "";
               <br>
               <div class="col-12">
                 <div class="custom-control custom-control-alternative custom-checkbox">
-                  <input class="custom-control-input" id="customCheckRegister2" type="checkbox">
+                  <input class="custom-control-input" id="customCheckRegister2" type="checkbox" required>
                   <label class="custom-control-label" for="customCheckRegister2">
                     <span style="color:black">Acepto los <a href="#!">Términos y condiciones</a></span>
                   </label>
