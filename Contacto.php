@@ -1,3 +1,46 @@
+<?php
+$nombre = "";
+$apellido = "";
+$email = "";
+$comentario = "";
+$comentario2 = "";
+$comentario3 = "";
+$comentario4 = "";
+$comentario5 = "";
+
+if ($_POST) {
+  $nombre = $_POST["nombre"];
+  $apellido = $_POST["apellido"];
+  $email = $_POST["email"];
+
+  if (strlen($nombre) == 0) {
+    $comentario = "El campo nombre está vacío";
+    $nombre="";
+  }
+
+  if (strlen($apellido) == 0) {
+    $comentario2 = "El campo apellido está vacío";
+    $apellido="";
+  }
+
+  if (filter_var($email, FILTER_VALIDATE_EMAIL) == false) {
+    $comentario3 = "El email ingresado debe ser válido";
+    $email="";
+  }
+
+  if (is_numeric($_POST["telefono"]) == false) {
+    $comentario4 = "El teléfono debe ser numérico";
+  }
+
+  if (strlen($_POST["comentario"]) == 0) {
+    $comentario5 = "Por favor ingrese un mensaje";
+  }
+
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -37,17 +80,19 @@
       <div class="row">
           <div class="col-12 col-lg-12" id="cajadecontacto">
               <div class="well well-sm">
-                  <form class="form-horizontal" method="post">
+                  <form class="form-horizontal" action="Contacto.php" method="post">
                           <div class="form-group">
                               <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                               <div class="col-md-8">
-                                  <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                                  <input id="fname" name="nombre" type="text" placeholder="Nombre" class="form-control">
+                                  <small class="form-text text-muted" style="color: black"><?=$comentario?></small>
                               </div>
                           </div>
                           <div class="form-group">
                               <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                               <div class="col-md-8">
-                                  <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
+                                  <input id="lname" name="apellido" type="text" placeholder="Apellido" class="form-control">
+                                  <small class="form-text text-muted" style="color: black"><?=$comentario2?></small>
                               </div>
                           </div>
 
@@ -55,20 +100,23 @@
                               <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
                               <div class="col-md-8">
                                   <input id="email" name="email" type="text" placeholder="Correo Electrónico" class="form-control">
+                                  <small class="form-text text-muted" style="color: black"><?=$comentario3?></small>
                               </div>
                           </div>
 
                           <div class="form-group">
                               <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
                               <div class="col-md-8">
-                                  <input id="phone" name="phone" type="phone" placeholder="Teléfono" class="form-control">
+                                  <input id="phone" name="telefono" type="phone" placeholder="Teléfono" class="form-control">
+                                  <small class="form-text text-muted" style="color: black"><?=$comentario4?></small>
                               </div>
                           </div>
 
                           <div class="form-group">
                               <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
                               <div class="col-md-8">
-                                  <textarea class="form-control" id="message" name="message" placeholder="Ingrese su mensaje aquí. Nos contactaremos con usted a la brevedad." rows="7"></textarea>
+                                  <textarea class="form-control" id="message" name="comentario" placeholder="Ingrese su mensaje aquí. Nos contactaremos con usted a la brevedad." rows="7"></textarea>
+                                  <small class="form-text text-muted" style="color: black"><?=$comentario5?></small>
                               </div>
                           </div>
 

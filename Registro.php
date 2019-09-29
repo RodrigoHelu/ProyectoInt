@@ -95,16 +95,16 @@ $foto = "Sube tu foto de perfil";
       <a class="navbar-brand" href="Home.html" id="navegacion">
     <img src="img/logo.png" class="d-inline-block align-top img-fluid" alt="Logo OpenFUX" id="imagenlogo">
       </a>
-        <a class="nav-item nav-link active" href="Home.html" id="textonav">Inicio <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="Registro.html" id="textonav">Registrate</a>
-        <a class="nav-item nav-link" href="Perfil.html" id="textonav">Términos y condiciones</a>
+        <a class="nav-item nav-link active" href="Home.php" id="textonav">Inicio <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="Registro.php" id="textonav">Registrate</a>
+        <a class="nav-item nav-link" href="Perfil.php" id="textonav">Términos y condiciones</a>
         <ul class="nav">
           <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="barracel">Menú</a>
           <div class="dropdown-menu dropdown-menu-right">
-          <a class="dropdown-item" href="Home.html">Inicio</a>
-          <a class="dropdown-item" href="Registro.html">Registrate</a>
-          <a class="dropdown-item" href="Perfil.html">Términos y condiciones</a>
+          <a class="dropdown-item" href="Home.php">Inicio</a>
+          <a class="dropdown-item" href="Registro.php">Registrate</a>
+          <a class="dropdown-item" href="Perfil.php">Términos y condiciones</a>
           </div>
           </li>
         </ul>
@@ -260,13 +260,13 @@ $foto = "Sube tu foto de perfil";
               <a href="#" class="nav-link" target="_blank" id="chon">Anunciarse</a>
             </li>
             <li class="nav-item">
-              <a href="Contacto.html" class="nav-link" target="_blank" id="chon">Contacto</a>
+              <a href="Contacto.php" class="nav-link" target="_blank" id="chon">Contacto</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link" target="_blank" id="chon">Sobre Nosotros</a>
             </li>
             <li class="nav-item">
-              <a href="FAQ.html" class="nav-link" target="_blank" id="chon">FAQ</a>
+              <a href="FAQ.php" class="nav-link" target="_blank" id="chon">FAQ</a>
             </li>
           </ul>
         </div>
