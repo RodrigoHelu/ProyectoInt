@@ -455,36 +455,7 @@
               </div>
 
 
-      <footer class="py-5">
-        <div class="container">
-          <div class="row align-items-center justify-content-xl-between">
-            <div class="col-12 col-lg-9">
-              <ul class="nav nav-footer justify-content-center justify-content-xl-end">
-                <li class="nav-item">
-                  <a href="#" class="nav-link" target="_blank">Desarrolladores</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link" target="_blank">Anunciarse</a>
-                </li>
-                <li class="nav-item">
-                  <a href="Contacto.php" class="nav-link" target="_blank" id="chon">Contacto</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link" target="_blank">Sobre Nosotros</a>
-                </li>
-                <li class="nav-item">
-                  <a href="FAQ.php" class="nav-link" target="_blank">FAQ</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-3">
-              <div class="copyright text-center text-xl-right text-muted">
-                © 2019 <a href="#" class="font-weight-bold ml-1" target="_blank">TK ltd.</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+<?php require_once("footer.php"); ?>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
