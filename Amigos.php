@@ -13,7 +13,7 @@
   <body>
     <header>
     <nav class="navbar navbar-dark bg-primary" id="barranavegacionpcs">
-      <a class="navbar-brand" href="Home.html" id="navegacion">
+      <a class="navbar-brand" href="Home.php" id="navegacion">
     <img src="img/logo.png" class="d-inline-block align-top img-fluid" alt="Logo OpenFUX" id="imagenlogo">
       </a>
           <form class="form-inline justify-content-center" id="barrabusqueda">
@@ -26,21 +26,21 @@
                   </div>
               </div>
           </form>
-            <a class="nav-item nav-link active" href="Home.html" id="textonav"><ion-icon name="home" id="iconosnav"></ion-icon></a>
+            <a class="nav-item nav-link active" href="Home.php" id="textonav"><ion-icon name="home" id="iconosnav"></ion-icon></a>
             <a class="nav-item nav-link" href="#" id="textonav"><ion-icon name="notifications" id="iconosnav"></ion-icon></a>
             <a class="nav-item nav-link" href="#" id="textonav"><ion-icon name="mail" id="iconosnav"></ion-icon></a>
             <a class="nav-item nav-link" href="#" id="textonav"><ion-icon name="settings" id="iconosnav"></ion-icon></a>
       </nav>
       <nav class="navbar navbar-dark bg-primary" id="barranavegacioncel">
-        <a class="navbar-brand" href="Home.html" id="navegacion">
+        <a class="navbar-brand" href="Home.php" id="navegacion">
       <img src="img/logo.png" class="d-inline-block align-top img-fluid" alt="Logo OpenFUX" id="imagenlogo">
         </a>
           <ul class="nav">
             <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="barracel">Menú</a>
             <div class="dropdown-menu dropdown-menu-right">
-            <a class="dropdown-item" href="Home.html">Inicio</a>
-            <a class="dropdown-item" href="Registro.html">Notificaciones</a>
+            <a class="dropdown-item" href="Home.php">Inicio</a>
+            <a class="dropdown-item" href="Registro.php">Notificaciones</a>
             <a class="dropdown-item" href="#">Mensajes</a>
             <a class="dropdown-item" href="#">Configuración</a>
             </div>
@@ -467,13 +467,13 @@
                   <a href="#" class="nav-link" target="_blank">Anunciarse</a>
                 </li>
                 <li class="nav-item">
-                  <a href="Contacto.html" class="nav-link" target="_blank" id="chon">Contacto</a>
+                  <a href="Contacto.php" class="nav-link" target="_blank" id="chon">Contacto</a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link" target="_blank">Sobre Nosotros</a>
                 </li>
                 <li class="nav-item">
-                  <a href="FAQ.html" class="nav-link" target="_blank">FAQ</a>
+                  <a href="FAQ.php" class="nav-link" target="_blank">FAQ</a>
                 </li>
               </ul>
             </div>

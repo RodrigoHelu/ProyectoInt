@@ -94,7 +94,7 @@ $foto = "Sube tu foto de perfil";
   <body>
     <header>
     <nav class="navbar navbar-dark bg-primary" id="menunavv">
-      <a class="navbar-brand" href="Home.html" id="navegacion">
+      <a class="navbar-brand" href="Home.php" id="navegacion">
     <img src="img/logo.png" class="d-inline-block align-top img-fluid" alt="Logo OpenFUX" id="imagenlogo">
       </a>
         <a class="nav-item nav-link active" href="Home.php" id="textonav">Inicio <span class="sr-only">(current)</span></a>
