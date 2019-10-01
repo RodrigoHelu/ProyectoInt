@@ -1,3 +1,26 @@
+<?php
+
+$email = "";
+$password = "";
+$comentario1 = "";
+$comentario2 = "";
+
+  if ($_POST) {
+    $email = $_POST["email"];
+
+    if (filter_var($email, FILTER_VALIDATE_EMAIL) == false) {
+      $comentario1 = "El email ingresado debe ser válido";
+      $email= null;
+    }
+
+    if (strlen($_POST["password"]) < 8) {
+      $comentario2 = "La contraseña debe tener al menos 8 caracteres";
+    }
+
+   }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -29,17 +52,25 @@
     <p class="text-center">Personaliza tu inicio de la manera que mejor te parezca.</p>
     </div>
     <div class="col-12 col-lg-6" id="datos">
-    <form>
+    <form role="form" action="Home.php" method="post" enctype="multipart/form-data">
       <div class="form-group">
         <label for="exampleInputEmail1">Dirección e-mail</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su e-mail">
-        <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu información con nadie.</small>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su e-mail" name="email" value=<?=$email?>>
+        <small class="form-text text-muted" style="color: black"><?=$comentario1?></small>
       </div>
       <div class="form-group">
         <label for="exampleInputPassword1">Contraseña</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingrese su contraseña">
+        <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Ingrese su contraseña">
+        <small class="form-text text-muted" style="color: black"><?=$comentario2?></small>
         <small id="pwHelp" class="form-text text-muted"><a href="#">¿Olvidaste tu contraseña?</a></small>
       </div>
+      <div class="custom-control custom-control-alternative custom-checkbox">
+          <input class="custom-control-input" id="customCheckRegister1" type="checkbox">
+          <label class="custom-control-label" for="customCheckRegister1">
+            <span style="color:white">Recordar usuario</span>
+          </label>
+        </div>
+  <br>
       <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
     </form>
     </div>
