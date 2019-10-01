@@ -49,7 +49,7 @@ $foto = "Sube tu foto de perfil";
                 }
             else {
               // No hay errores
-              move_uploaded_file($_FILES["archivo"]["tmp_name"], "archivos/ " . $nombrearchivo);
+              move_uploaded_file($_FILES["archivo"]["tmp_name"], "archivos/ " . $nombre . $apellido . "." . $ext);
                 }
               }
             }
