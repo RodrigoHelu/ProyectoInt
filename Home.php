@@ -1,7 +1,6 @@
 <?php
 
 $email = "";
-$password = "";
 $comentario1 = "";
 $comentario2 = "";
 
@@ -88,7 +87,7 @@ $comentario2 = "";
     </div>
   <div class="col-12 col-lg-12">
   <br>
-  <p class="text-center font-weight-bold">Si te registras significa que aceptas los <a href="#">Términos del servicio</a> y la <a href="#">Política de privacidad</a>, incluido el <a href="#">Uso de cookies</a>. Otros usuarios podrán encontrarte por tu correo electrónico o tu número de telefono si los proporcionas. </p>
+  <p class="text-center font-weight-bold">Si te registras significa que aceptas los <a href="#">Términos del servicio</a> y la <a href="#">Política de privacidad</a>, incluido el <a href="#">Uso de cookies</a>. Otros usuarios podrán encontrarte por tu correo electrónico o tu número de teléfono si los proporcionas. </p>
   </div>
   </div>
   </div>
