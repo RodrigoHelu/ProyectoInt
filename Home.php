@@ -77,8 +77,8 @@ $comentario2 = "";
     <br>
     <br>
     <br>
-    <h2 class="font-weight-bold text-center" id="parrafo1">Descubre lo que están haciendo tus amigos en este mismo momento</h2>
-    <h2 class="font-weight-bold text-center" id="parrafo">Únete hoy a OpenFUX.</h2>
+    <h2 class="font-weight-bold text-center" id="parrafo">Descubre lo que están haciendo tus amigos en este mismo momento</h2>
+    <h2 class="font-weight-bold text-center">Únete hoy a OpenFUX.</h2>
     <br>
     </div>
     <div class="col-12 col-lg-6">

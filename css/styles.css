@@ -39,12 +39,11 @@ footer {
   margin-top: -100px;
 }
 
-h2#parrafo {
+h2 {
   font-family: 'Work Sans', sans-serif;
 }
 
-h2#parrafo1 {
-  font-family: 'Work Sans', sans-serif;
+h2#parrafo {
   margin-top: -50px;
 }
 
@@ -81,7 +80,7 @@ h3 {
   margin-top: 50px;
 }
 
-h2#parrafo1 {
+h2#parrafo {
   margin-top: 0px;
 }
 
