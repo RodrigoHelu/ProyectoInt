@@ -275,10 +275,10 @@
                   <div class="card gedf-card">
                       <div class="card-body">
                         <h5 class="card-title">@marcebenedetto</h5>
-                          <h6 class="card-subtitle mb-2 text-muted"><a href="#" style="text-decoration:none">Marcelo Benedetto</a></h6>
+                          <h6 class="card-subtitle mb-2 text-muted">Marcelo Benedetto</h6>
                           <p class="card-text" id="parrafoss">Que será de nosotros en octubre?</p>
-                          <a href="#" class="card-link">Entra a su perfil</a>
-                          <a href="#" class="card-link">Ocultar publicación</a>
+                          <a href="#" class="card-link">Seguir</a>
+                          <a href="#" class="card-link">Ocultar</a>
                       </div>
                   </div>
                   <div class="card gedf-card">
@@ -286,8 +286,8 @@
                               <h5 class="card-title">@termofdez</h5>
                               <h6 class="card-subtitle mb-2 text-muted">Matías Fernández</h6>
                               <p class="card-text" id="parrafoss">Alto fútbol <ion-icon name="football"></ion-icon></p>
-                              <a href="#" class="card-link">Entra a su perfil</a>
-                              <a href="#" class="card-link">Ocultar publicación</a>
+                              <a href="#" class="card-link">Seguir</a>
+                              <a href="#" class="card-link">Ocultar</a>
                           </div>
                     </div>
               </div>
