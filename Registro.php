@@ -2,6 +2,7 @@
 
 $nombre = "";
 $apellido = "";
+$usuario = "";
 $email = "";
 $ext = "";
 $password = "";
@@ -10,26 +11,35 @@ $comentario2 = "";
 $comentario3 = "";
 $comentario4 = "";
 $comentario5 = "";
+$comentario6 = "";
+$error = "";
+$exito = "";
 $foto = "Sube tu foto de perfil";
 
     if ($_POST) {
       $nombre = $_POST["nombre"];
       $apellido = $_POST["apellido"];
+      $usuario = $_POST["usuario"];
       $email = $_POST["email"];
 
       if (strlen($nombre) == 0) {
         $comentario = "El campo nombre está vacío";
-        $nombre= null;
+        $nombre = null;
       }
 
       if (strlen($apellido) == 0) {
         $comentario2 = "<br>El campo apellido está vacío";
-        $apellido= null;
+        $apellido = null;
+      }
+
+      if (strlen($usuario) == 0) {
+        $comentario6 = "<br>El campo usuario está vacío";
+        $usuario = null;
       }
 
       if (filter_var($email, FILTER_VALIDATE_EMAIL) == false) {
         $comentario3 = "El email ingresado debe ser válido";
-        $email= null;
+        $email = null;
       }
 
       if (strlen($_POST["password"]) < 8) {
@@ -50,10 +60,16 @@ $foto = "Sube tu foto de perfil";
             else {
               // No hay errores
               move_uploaded_file($_FILES["archivo"]["tmp_name"], "archivos/ " . $nombre . $apellido . "." . $ext);
+              $error = 0;
+              $exito = "Usuario registrado con éxito";
+              $nombre = "";
+              $apellido = "";
+              $usuario = "";
+              $email = "";
                 }
               }
             }
-      if($nombre != null && $apellido != null && $email != null){
+      if($nombre != null && $apellido != null && $email != null && $usuario != null){
         $password  =  password_hash( $_POST['password'], PASSWORD_DEFAULT);
         $archivo = "usuarios.json";
         $contenidoArchivo = file_get_contents( $archivo );
@@ -66,6 +82,7 @@ $foto = "Sube tu foto de perfil";
         $datos[] =  [
           'nombre' =>  $_POST['nombre'],
           'apellido' => $_POST['apellido'],
+          'usuario' =>  $_POST['usuario'],
           'email' =>  $_POST['email'],
           'password' => $password
         ];
@@ -135,6 +152,11 @@ $foto = "Sube tu foto de perfil";
           <div class="text-center mb-4">
             <small  id="black">O regístrate con tus datos</small>
           </div>
+          <?php if($error == 0) :?>
+          <div class="text-center mb-4">
+            <small  id="green"><?=$exito?></small>
+          </div>
+          <?php endif; ?>
           <form role="form" action="Registro.php" method="post" enctype="multipart/form-data">
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
@@ -153,6 +175,15 @@ $foto = "Sube tu foto de perfil";
                 <input class="form-control" placeholder="Apellido" type="text" name="apellido" value=<?=$apellido?>>
               </div>
               <small class="form-text text-muted" id="black"><?=$comentario2?></small>
+            </div>
+            <div class="form-group">
+              <div class="input-group input-group-alternative">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                </div>
+                <input class="form-control" placeholder="Usuario" type="text" name="usuario" value=<?=$usuario?>>
+              </div>
+              <small class="form-text text-muted" id="black"><?=$comentario6?></small>
             </div>
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">

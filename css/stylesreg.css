@@ -13,6 +13,10 @@ body {
   color:black;
 }
 
+#green {
+  color: green;
+}
+
 #mano {
   position: absolute;
   margin-left: 110px;
