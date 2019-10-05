@@ -82,6 +82,20 @@ div.h7{
   .gedf-card {
       margin-bottom: 2.77rem;
       }
+  .gedf-card#aquienseguir {
+      margin-bottom: 0px;
+      }
+
+  #titulaso {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  #personitasdesc {
+    border-bottom: 1px solid lightgrey;
+    margin-top: -12px;
+  }
 
   #navegacion {
       margin-left: 0px;
@@ -117,6 +131,10 @@ div.h7{
 
     #amigosqueseguir {
       display: block;
+    }
+
+    #titulitosd {
+      color:white;
     }
 
     #iconitos {

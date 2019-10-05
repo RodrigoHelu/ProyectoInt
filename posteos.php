@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Perfil | OpenFUX</title>
+    <title>Inicio | OpenFUX</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/stylesPOST.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -267,19 +267,15 @@
               </div>
 
               <div class="col-md-3" id="amigosqueseguir">
-                <div class="card gedf-card">
-                          <h5 class="card-title text-center"><strong>A quién seguir</strong></h5>
-                  </div>
-                  <div class="card gedf-card">
-                      <div class="card-body">
+                <div class="card gedf-card" id="aquienseguir">
+                          <h5 class="card-title text-center" id="titulaso"><strong>A quién seguir</strong></h5>
+                      <div class="card-body" id="personitasdesc">
                         <h5 class="card-title">@marcebenedetto</h5>
                           <h6 class="card-subtitle mb-2 text-muted">Marcelo Benedetto</h6>
                           <p class="card-text" id="parrafoss">Que será de nosotros en octubre?</p>
                           <a href="#" class="card-link">Seguir</a>
                           <a href="#" class="card-link">Ocultar</a>
                       </div>
-                  </div>
-                  <div class="card gedf-card">
                           <div class="card-body">
                               <h5 class="card-title">@termofdez</h5>
                               <h6 class="card-subtitle mb-2 text-muted">Matías Fernández</h6>
@@ -287,7 +283,6 @@
                               <a href="#" class="card-link">Seguir</a>
                               <a href="#" class="card-link">Ocultar</a>
                           </div>
-                    </div>
               </div>
           </div>
       </div>
