@@ -149,12 +149,12 @@ $foto = "Sube tu foto de perfil";
           </div>
         </div>
         <div class="card-body mt--1 px-lg-5 py-lg-5" id="cajareg">
-          <div class="text-center mb-4">
+          <div class="text-center mb-4" id="blackk">
             <small  id="black">O regístrate con tus datos</small>
           </div>
           <?php if($error == 0) :?>
           <div class="text-center mb-4">
-            <small  id="green"><?=$exito?></small>
+            <strong  id="green"><?=$exito?></strong>
           </div>
           <?php endif; ?>
           <form role="form" action="Registro.php" method="post" enctype="multipart/form-data">
