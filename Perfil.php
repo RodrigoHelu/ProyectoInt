@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Perfil | OpenFUX</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylesPERF.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/stylesPERF.css">
     <link rel="icon" href="img/favicon.png">
   </head>
   <body>
@@ -128,8 +128,8 @@
                                   <img class="rounded-circle" width="45" src="img/perfil.png" alt="Foto de perfil">
                                 </div>
                                   <div class="ml-2">
-                                      <div class="h5 m-0">@LeeCross</div>
-                                      <div class="h7 text-muted">Miracles Lee Cross</div>
+                                      <div class="h5 m-0">@mapichetto</div>
+                                      <div class="h7 text-muted">Marcos Pichetto</div>
                                   </div>
                               </div>
                               <div>
@@ -138,9 +138,9 @@
                                           <i class="fa fa-ellipsis-h"></i>
                                       </button>
                                       <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
-                                          <a class="dropdown-item" href="#">Guardar</a>
-                                          <a class="dropdown-item" href="#">Ocultar</a>
-                                          <a class="dropdown-item" href="#">Eliminar</a>
+                                          <a class="dropdown-item" href="#">Silenciar</a>
+                                          <a class="dropdown-item" href="#">Ocultar publicación</a>
+                                          <a class="dropdown-item" href="#">Dejar de seguir</a>
                                       </div>
                                   </div>
                               </div>
@@ -172,8 +172,8 @@
                                   <img class="rounded-circle" width="45" src="img/perfil.png" alt="Foto de perfil">
                                 </div>
                                   <div class="ml-2">
-                                      <div class="h5 m-0">@LeeCross</div>
-                                      <div class="h7 text-muted">Miracles Lee Cross</div>
+                                      <div class="h5 m-0">@NicoDot</div>
+                                      <div class="h7 text-muted">Nicolás Dot</div>
                                   </div>
                               </div>
                               <div>
@@ -182,9 +182,9 @@
                                           <i class="fa fa-ellipsis-h"></i>
                                       </button>
                                       <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
-                                          <a class="dropdown-item" href="#">Guardar</a>
-                                          <a class="dropdown-item" href="#">Ocultar</a>
-                                          <a class="dropdown-item" href="#">Eliminar</a>
+                                          <a class="dropdown-item" href="#">Silenciar</a>
+                                          <a class="dropdown-item" href="#">Ocultar publicación</a>
+                                          <a class="dropdown-item" href="#">Dejar de seguir</a>
                                       </div>
                                   </div>
                               </div>
@@ -227,8 +227,8 @@
                                   <img class="rounded-circle" width="45" src="img/perfil.png" alt="Foto de perfil">
                                 </div>
                                   <div class="ml-2">
-                                      <div class="h5 m-0">@LeeCross</div>
-                                      <div class="h7 text-muted">Miracles Lee Cross</div>
+                                      <div class="h5 m-0">@RafaDLP</div>
+                                      <div class="h7 text-muted">Rafael De la Peña</div>
                                   </div>
                               </div>
                               <div>
@@ -237,9 +237,9 @@
                                           <i class="fa fa-ellipsis-h"></i>
                                       </button>
                                       <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
-                                          <a class="dropdown-item" href="#">Guardar</a>
-                                          <a class="dropdown-item" href="#">Ocultar</a>
-                                          <a class="dropdown-item" href="#">Eliminar</a>
+                                          <a class="dropdown-item" href="#">Silenciar</a>
+                                          <a class="dropdown-item" href="#">Ocultar publicación</a>
+                                          <a class="dropdown-item" href="#">Dejar de seguir</a>
                                       </div>
                                   </div>
                               </div>
@@ -247,7 +247,7 @@
 
                       </div>
                       <div class="card-body">
-                          <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i> Hace 40 minutos</div>
+                          <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i> Hace 15 minutos</div>
                           <a class="card-link" href="#">
                               <h5 class="card-title"><em>Totam non adipisci hic! Possimus ducimus amet, dolores illo ipsum quos
                                   cum.</em></h5>
@@ -267,10 +267,15 @@
               </div>
 
               <div class="col-md-3" id="amigosqueseguir">
+                <div class="card gedf-card">
+                      <div class="card-body text-center">
+                          <h5 class="card-title text-center"><strong>¿A quién seguir?</strong></h5>
+                      </div>
+                  </div>
                   <div class="card gedf-card">
                       <div class="card-body">
-                          <h5 class="card-title">@mapichetto</h5>
-                          <h6 class="card-subtitle mb-2 text-muted">Marcos Pichetto</h6>
+                        <h5 class="card-title">@marcebenedetto</h5>
+                          <h6 class="card-subtitle mb-2 text-muted"><a href="#" style="text-decoration:none">Marcelo Benedetto</a></h6>
                           <p class="card-text" id="parrafoss">Que será de nosotros en octubre?</p>
                           <a href="#" class="card-link">Entra a su perfil</a>
                           <a href="#" class="card-link">Ocultar publicación</a>
