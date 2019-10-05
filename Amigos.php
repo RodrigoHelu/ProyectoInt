@@ -52,7 +52,7 @@
                                       <div class="thumb-lg member-thumb mx-auto"><img src="img/perfil.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
                                       <div class="">
                                           <h4>Gerónimo Pacheco</h4>
-                                          <a href="#" style="text-decoration:none"><p class="text-muted">@geropacha</p></a>
+                                          <a href="#" id="textamigos"><p class="text-muted">@geropacha</p></a>
                                       </div>
                                       <ul class="social-links list-inline">
                                           <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
@@ -91,7 +91,7 @@
                                       <div class="thumb-lg member-thumb mx-auto"><img src="img/perfil.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
                                       <div class="">
                                           <h4>Agustín Dip</h4>
-                                          <a href="#" style="text-decoration:none"><p class="text-muted">@fandemassa</p></a>
+                                          <a href="#" id="textamigos"><p class="text-muted">@fandemassa</p></a>
                                       </div>
                                       <ul class="social-links list-inline">
                                           <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
@@ -130,7 +130,7 @@
                                       <div class="thumb-lg member-thumb mx-auto"><img src="img/perfil.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
                                       <div class="">
                                           <h4>Nicolás Heluani</h4>
-                                          <a href="#" style="text-decoration:none"><p class="text-muted">@nico_heluani17</p></a>
+                                          <a href="#" id="textamigos"><p class="text-muted">@nico_heluani17</p></a>
                                       </div>
                                       <ul class="social-links list-inline">
                                           <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
@@ -171,7 +171,7 @@
                                       <div class="thumb-lg member-thumb mx-auto"><img src="img/perfil.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
                                       <div class="">
                                           <h4>Rodrigo Sabate</h4>
-                                          <a href="#" style="text-decoration:none"><p class="text-muted">@laweacosmica</p></a>
+                                          <a href="#" id="textamigos"><p class="text-muted">@laweacosmica</p></a>
                                       </div>
                                       <ul class="social-links list-inline">
                                           <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
@@ -210,7 +210,7 @@
                                       <div class="thumb-lg member-thumb mx-auto"><img src="img/perfil.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
                                       <div class="">
                                           <h4>José Ignacio Esparza</h4>
-                                          <a href="#" style="text-decoration:none"><p class="text-muted">@weirdman123</p></a>
+                                          <a href="#" id="textamigos"><p class="text-muted">@weirdman123</p></a>
                                       </div>
                                       <ul class="social-links list-inline">
                                           <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
@@ -249,7 +249,7 @@
                                       <div class="thumb-lg member-thumb mx-auto"><img src="img/perfil.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
                                       <div class="">
                                           <h4>Matías Pompón</h4>
-                                          <a href="#" style="text-decoration:none"><p class="text-muted">@pimpollo</p></a>
+                                          <a href="#" id="textamigos"><p class="text-muted">@pimpollo</p></a>
                                       </div>
                                       <ul class="social-links list-inline">
                                           <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
@@ -290,7 +290,7 @@
                                       <div class="thumb-lg member-thumb mx-auto"><img src="img/perfil.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
                                       <div class="">
                                           <h4>Wini Casadey</h4>
-                                          <a href="#" style="text-decoration:none"><p class="text-muted">@winihome</p></a>
+                                          <a href="#" id="textamigos"><p class="text-muted">@winihome</p></a>
                                       </div>
                                       <ul class="social-links list-inline">
                                           <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
@@ -329,7 +329,7 @@
                                       <div class="thumb-lg member-thumb mx-auto"><img src="img/perfil.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
                                       <div class="">
                                           <h4>Emilia Clarke</h4>
-                                          <a href="#" style="text-decoration:none"><p class="text-muted">@dragonqueen</p></a>
+                                          <a href="#" id="textamigos"><p class="text-muted">@dragonqueen</p></a>
                                       </div>
                                       <ul class="social-links list-inline">
                                           <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
@@ -368,7 +368,7 @@
                                       <div class="thumb-lg member-thumb mx-auto"><img src="img/perfil.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
                                       <div class="">
                                           <h4>Dele Ali</h4>
-                                          <a href="#" style="text-decoration:none"><p class="text-muted">@deleali</p></a>
+                                          <a href="#" id="textamigos"><p class="text-muted">@deleali</p></a>
                                       </div>
                                       <ul class="social-links list-inline">
                                           <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>

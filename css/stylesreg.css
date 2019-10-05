@@ -9,6 +9,10 @@ body {
   width: 100%;
 }
 
+#black {
+  color:black;
+}
+
 #mano {
   position: absolute;
   margin-left: 110px;

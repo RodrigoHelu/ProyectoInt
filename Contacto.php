@@ -68,14 +68,14 @@ if ($_POST) {
                               <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                               <div class="col-md-8">
                                   <input id="fname" name="nombre" type="text" placeholder="Nombre" class="form-control" value=<?=$nombre?>>
-                                  <small class="form-text text-muted" style="color: black"><?=$comentario?></small>
+                                  <small class="form-text text-muted" id="black"><?=$comentario?></small>
                               </div>
                           </div>
                           <div class="form-group">
                               <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                               <div class="col-md-8">
                                   <input id="lname" name="apellido" type="text" placeholder="Apellido" class="form-control" value=<?=$apellido?>>
-                                  <small class="form-text text-muted" style="color: black"><?=$comentario2?></small>
+                                  <small class="form-text text-muted" id="black"><?=$comentario2?></small>
                               </div>
                           </div>
 
@@ -83,7 +83,7 @@ if ($_POST) {
                               <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
                               <div class="col-md-8">
                                   <input id="email" name="email" type="text" placeholder="Correo Electrónico" class="form-control" value=<?=$email?>>
-                                  <small class="form-text text-muted" style="color: black"><?=$comentario3?></small>
+                                  <small class="form-text text-muted" id="black"><?=$comentario3?></small>
                               </div>
                           </div>
 
@@ -91,7 +91,7 @@ if ($_POST) {
                               <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
                               <div class="col-md-8">
                                   <input id="phone" name="telefono" type="phone" placeholder="Teléfono" class="form-control" value=<?=$telefono?>>
-                                  <small class="form-text text-muted" style="color: black"><?=$comentario4?></small>
+                                  <small class="form-text text-muted" id="black"><?=$comentario4?></small>
                               </div>
                           </div>
 
@@ -99,7 +99,7 @@ if ($_POST) {
                               <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
                               <div class="col-md-8">
                                   <textarea class="form-control" id="message" name="comentario" placeholder="Ingrese su mensaje aquí. Nos contactaremos con usted a la brevedad." rows="7"></textarea>
-                                  <small class="form-text text-muted" style="color: black"><?=$comentario5?></small>
+                                  <small class="form-text text-muted" id="black"><?=$comentario5?></small>
                               </div>
                           </div>
 

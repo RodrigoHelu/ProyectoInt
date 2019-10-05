@@ -84,8 +84,8 @@ $foto = "Sube tu foto de perfil";
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Registro | OpenFUX</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/stylesreg.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylesREG.css">
     <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
@@ -133,7 +133,7 @@ $foto = "Sube tu foto de perfil";
         </div>
         <div class="card-body mt--1 px-lg-5 py-lg-5" id="cajareg">
           <div class="text-center mb-4">
-            <small  style="color:black">O regístrate con tus datos</small>
+            <small  id="black">O regístrate con tus datos</small>
           </div>
           <form role="form" action="Registro.php" method="post" enctype="multipart/form-data">
             <div class="form-group">
@@ -143,7 +143,7 @@ $foto = "Sube tu foto de perfil";
                 </div>
                 <input class="form-control" placeholder="Nombre" type="text" name="nombre" value=<?=$nombre?>>
               </div>
-              <small class="form-text text-muted" style="color: black"><?=$comentario?></small>
+              <small class="form-text text-muted" id="black"><?=$comentario?></small>
             </div>
             <div class="form-group">
               <div class="input-group input-group-alternative">
@@ -152,7 +152,7 @@ $foto = "Sube tu foto de perfil";
                 </div>
                 <input class="form-control" placeholder="Apellido" type="text" name="apellido" value=<?=$apellido?>>
               </div>
-              <small class="form-text text-muted" style="color: black"><?=$comentario2?></small>
+              <small class="form-text text-muted" id="black"><?=$comentario2?></small>
             </div>
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
@@ -161,7 +161,7 @@ $foto = "Sube tu foto de perfil";
                 </div>
                 <input class="form-control" placeholder="Correo Electrónico" type="email" name="email" value=<?=$email?>>
               </div>
-              <small class="form-text text-muted" style="color: black"><?=$comentario3?></small>
+              <small class="form-text text-muted" id="black"><?=$comentario3?></small>
             </div>
             <div class="form-group">
               <div class="input-group input-group-alternative">
@@ -170,9 +170,9 @@ $foto = "Sube tu foto de perfil";
                 </div>
                 <input class="form-control" placeholder="Contraseña" type="password" name="password">
               </div>
-              <small class="form-text text-muted" style="color: black"><?=$comentario4?></small>
+              <small class="form-text text-muted" id="black"><?=$comentario4?></small>
             </div>
-            <div class="font-italic" style="color:black"><small>Seguridad de la contraseña: <span class="text-success font-weight-700">segura</span></small></div>
+            <div class="font-italic" id="black"><small>Seguridad de la contraseña: <span class="text-success font-weight-700">segura</span></small></div>
             <br>
             <div class="input-group">
               <div class="input-group-prepend">
@@ -183,13 +183,13 @@ $foto = "Sube tu foto de perfil";
                 <label class="custom-file-label" for="customFileLang"><?=$foto?></label>
               </div>
             </div>
-            <small class="form-text text-muted" style="color: black"><?=$comentario5?></small>
+            <small class="form-text text-muted" id="black"><?=$comentario5?></small>
             <div class="row my-4">
               <div class="col-12">
                 <div class="custom-control custom-control-alternative custom-checkbox">
                   <input class="custom-control-input" id="customCheckRegister1" type="checkbox">
                   <label class="custom-control-label" for="customCheckRegister1">
-                    <span style="color:black">Recordar usuario</span>
+                    <span id="black">Recordar usuario</span>
                   </label>
                 </div>
               </div>
@@ -198,7 +198,7 @@ $foto = "Sube tu foto de perfil";
                 <div class="custom-control custom-control-alternative custom-checkbox">
                   <input class="custom-control-input" id="customCheckRegister2" type="checkbox" required>
                   <label class="custom-control-label" for="customCheckRegister2">
-                    <span style="color:black">Acepto los <a href="#!">Términos y condiciones</a></span>
+                    <span id="black">Acepto los <a href="#!">Términos y condiciones</a></span>
                   </label>
                 </div>
               </div>

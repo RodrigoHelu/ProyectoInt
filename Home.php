@@ -55,12 +55,12 @@ $comentario2 = "";
       <div class="form-group">
         <label for="exampleInputEmail1">Dirección e-mail</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su e-mail" name="email" value=<?=$email?>>
-        <small class="form-text text-muted" style="color: black"><?=$comentario1?></small>
+        <small class="form-text text-muted" id="black"><?=$comentario1?></small>
       </div>
       <div class="form-group">
         <label for="exampleInputPassword1">Contraseña</label>
         <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Ingrese su contraseña">
-        <small class="form-text text-muted" style="color: black"><?=$comentario2?></small>
+        <small class="form-text text-muted" id="black"><?=$comentario2?></small>
         <small id="pwHelp" class="form-text text-muted"><a href="#">¿Olvidaste tu contraseña?</a></small>
       </div>
       <div class="custom-control custom-control-alternative custom-checkbox">

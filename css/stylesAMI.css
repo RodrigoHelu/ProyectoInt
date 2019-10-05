@@ -11,6 +11,10 @@ body {
   color: black;
 }
 
+#textamigos {
+  text-decoration:none;
+}
+
 .h7 {
   font-size: 0.8rem;
     }

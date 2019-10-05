@@ -13,6 +13,10 @@ body {
   display: none;
 }
 
+#id {
+  color:black;
+}
+
 div#pregfrec {
   font-family: 'Patua One', cursive;
   color: white;
