@@ -133,6 +133,10 @@ footer {
   width: 300px;
 }
 
+#barrabusqueda {
+  margin-left: 40px;
+}
+
 @media (min-width: 992px){
 
 #textcolor {
