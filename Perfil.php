@@ -12,7 +12,9 @@
     <link rel="icon" href="img/favicon.png">
   </head>
   <body>
+
 <?php require_once("barranavlogueado.php"); ?>
+<?php require_once("barranavcellogueado.php"); ?>
 
 <div class="container mt-5">
     <div class="row">

@@ -112,13 +112,6 @@ body {
   display: none;
 }
 
-div#pregfrec {
-  font-family: 'Patua One', cursive;
-  color: #01172E;
-  font-size: 25px;
-  opacity: 0.8;
-  margin-bottom: 15px;
-}
 
 footer {
   margin-top: -100px;
@@ -126,6 +119,10 @@ footer {
 
 #barracel {
   color: white;
+}
+
+#barranavegacionpcs {
+  display: none;
 }
 
 #imagenlogo {
@@ -138,44 +135,19 @@ footer {
 
 @media (min-width: 992px){
 
-h3 {
-  text-align: justify;
-  margin-right: 200px;
-  margin-top: 50px;
+#textcolor {
+
+  color:white;
 }
 
-div#margencaja {
-margin-left: 75px;
+#barranavegacionpcs {
+  display: flex;
 }
 
-div.container {
-  overflow: hidden;
+#barranavegacioncel {
+  display: none;
 }
 
-div.col-lg-6 {
-  width: 100%;
-  float: right;
-}
-
-div#pregfrec {
-  margin-bottom: 0px;
-}
-
-#mano {
-  margin-left: 205px;
-}
-
-#maleta {
-  margin-left: 115px;
-}
-
-#pincel {
-  margin-left: 183px;
-}
-
-#boton {
-  margin-left: 290px;
-}
 
 #textonav {
   display: block;
