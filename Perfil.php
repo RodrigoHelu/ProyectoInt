@@ -87,7 +87,7 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="account-email">Correo Electrónico</label>
-                        <input class="form-control" type="email" value="leecross@example.com" disabled="">
+                        <input class="form-control" type="email" value="leecross@example.com" required="">
                     </div>
                 </div>
                 <div class="col-md-6">
