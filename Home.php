@@ -12,10 +12,13 @@ $comentario2 = "";
       $email= null;
     }
 
+    if(isset($_POST['recordar']) && !empty($_POST['recordar']) && $email != null){
+    setcookie("email", $_POST["email"], time() + 60 * 60 * 24 * 365);
+    }
+
     if (strlen($_POST["password"]) < 8) {
       $comentario2 = "La contraseña debe tener al menos 8 caracteres";
     }
-
    }
 
 ?>
@@ -64,7 +67,7 @@ $comentario2 = "";
         <small id="pwHelp" class="form-text text-muted"><a href="#">¿Olvidaste tu contraseña?</a></small>
       </div>
       <div class="custom-control custom-control-alternative custom-checkbox">
-          <input class="custom-control-input" id="customCheckRegister1" type="checkbox">
+          <input class="custom-control-input" id="customCheckRegister1" type="checkbox" name="recordar">
           <label class="custom-control-label" for="customCheckRegister1">
             <span style="color:white">Recordar usuario</span>
           </label>

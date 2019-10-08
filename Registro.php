@@ -42,6 +42,10 @@ $foto = "Sube tu foto de perfil";
         $email = null;
       }
 
+      if(isset($_POST['recordar']) && !empty($_POST['recordar']) && $email != null){
+      setcookie("email", $_POST["email"], time() + 60 * 60 * 24 * 365);
+      }
+
       if (strlen($_POST["password"]) < 8) {
         $comentario4 = "<br>La contraseña debe tener al menos 8 caracteres";
       }
@@ -218,7 +222,7 @@ $foto = "Sube tu foto de perfil";
             <div class="row my-4">
               <div class="col-12">
                 <div class="custom-control custom-control-alternative custom-checkbox">
-                  <input class="custom-control-input" id="customCheckRegister1" type="checkbox">
+                  <input class="custom-control-input" id="customCheckRegister1" type="checkbox" name="recordar">
                   <label class="custom-control-label" for="customCheckRegister1">
                     <span id="black">Recordar usuario</span>
                   </label>
