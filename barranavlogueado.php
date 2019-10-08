@@ -12,8 +12,8 @@
               </div>
           </div>
       </form>
-        <a class="nav-item nav-link active" href="Home.php" id="textonav"><ion-icon name="home" id="iconosnav"></ion-icon></a>
+        <a class="nav-item nav-link active" href="posteos.php" id="textonav"><ion-icon name="home" id="iconosnav"></ion-icon></a>
         <a class="nav-item nav-link" href="#" id="textonav"><ion-icon name="notifications" id="iconosnav"></ion-icon></a>
         <a class="nav-item nav-link" href="#" id="textonav"><ion-icon name="mail" id="iconosnav"></ion-icon></a>
-        <a class="nav-item nav-link" href="#" id="textonav"><ion-icon name="settings" id="iconosnav"></ion-icon></a>
+        <a class="nav-item nav-link" href="Perfil.php" id="textonav"><ion-icon name="settings" id="iconosnav"></ion-icon></a>
   </nav>
