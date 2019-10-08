@@ -8,15 +8,14 @@
     <link rel="stylesheet" href="css/stylesPERF.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
     <link rel="icon" href="img/favicon.png">
   </head>
   <body>
-
+    <header>
 <?php require_once("barranavlogueado.php"); ?>
 <?php require_once("barranavcellogueado.php"); ?>
-
+    </header>
 <div class="container mt-5">
     <div class="row">
         <div class="col-lg-4 pb-5">
@@ -121,6 +120,7 @@
 </div>
 <br>
 <br>
+
 <?php require_once("footer.php"); ?>
 
 
