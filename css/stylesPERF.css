@@ -6,7 +6,6 @@ body {
 
 #wizard {
   background-color: #fff;
-
 }
 
 .widget-author {
@@ -101,9 +100,7 @@ body {
     background-color: #fff;
 }
 
-
 #textcolor {
-
   color:white;
 }
 
@@ -111,7 +108,6 @@ body {
   color: white;
   display: none;
 }
-
 
 footer {
   margin-top: -100px;
@@ -133,10 +129,13 @@ footer {
   margin-top: 2px;
 }
 
+#buscador {
+  width: 300px;
+}
+
 @media (min-width: 992px){
 
 #textcolor {
-
   color:white;
 }
 
