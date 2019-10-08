@@ -57,7 +57,7 @@ $comentario2 = "";
     <form role="form" action="Home.php" method="post" enctype="multipart/form-data">
       <div class="form-group">
         <label for="exampleInputEmail1">Dirección e-mail</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su e-mail" name="email" value=<?=$email?>>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su e-mail" name="email" value="<?=(isset($_COOKIE["email"])?$_COOKIE["email"]:$email)?>">
         <small class="form-text text-muted" id="black"><?=$comentario1?></small>
       </div>
       <div class="form-group">
