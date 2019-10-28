@@ -1,1 +1,1 @@
-Listo Sprint 2 (Maxi cuando cambiamos la extensión de los archivos se rompió el Home y también el Registro y no sabemos bien por qué. Al principio yo veia bien el Registro y después de hacer un pull se terminó rompiendo. El Home ya desde un comienzo con el cambio de extensión de .html a .php se desconfiguró todo. No se si será posible que nos ayudes a encontrar una solución. Muchas gracias!) 
+Listo Sprint 3
