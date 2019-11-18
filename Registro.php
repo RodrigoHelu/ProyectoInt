@@ -1,4 +1,5 @@
 <?php
+include("pdoRedSocial.php");
 
 $nombre = "";
 $apellido = "";
@@ -73,7 +74,7 @@ $foto = "Sube tu foto de perfil";
                 }
               }
             }
-      if($nombre != null && $apellido != null && $email != null && $usuario != null){
+      /*if($nombre != null && $apellido != null && $email != null && $usuario != null){
         $password  =  password_hash( $_POST['password'], PASSWORD_DEFAULT);
         $archivo = "usuarios.json";
         $contenidoArchivo = file_get_contents( $archivo );
@@ -94,7 +95,7 @@ $foto = "Sube tu foto de perfil";
         $json = json_encode( $datos );
 
         file_put_contents( $archivo, $json );
-      }
+      }*/
 
     }
 
