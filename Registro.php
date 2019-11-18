@@ -162,7 +162,7 @@ $foto = "Sube tu foto de perfil";
             <strong  id="green"><?=$exito?></strong>
           </div>
           <?php endif; ?>
-          <form role="form" action="Registro.php" method="post" enctype="multipart/form-data">
+          <form role="form" action="registro.php" method="post" enctype="multipart/form-data">
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
